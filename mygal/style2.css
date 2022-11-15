@@ -1,0 +1,140 @@
+body {background: black;}
+
+header div.col h2{
+color: white;
+font-size: 20px;
+padding: 20px;
+float: right;
+padding-right:400px;
+}
+
+
+header div.col h2 visited: {
+color: white;
+font-size: 20px;
+padding: 20px;
+float: right;
+padding-right:400px;
+}
+
+
+
+
+
+
+
+section div.col-12 {color: red;
+font-size:20px;
+font-size: 30px;
+text-align: center;}
+
+.text1 {color: white;
+font-size: 20px;
+text-align: center;}
+
+.text2 {color: white;
+font-size: 20px;
+text-align: center;
+padding-top: 20px;}
+
+section div img.fish{
+display: inline-block;
+width:200px;
+height:200px;
+float: center;
+transition-duration: 1s;}/*время перехода*/
+
+section div img.gorilla{
+display:inline-block;
+width:200px;
+height:200px;
+float: center;}
+
+section div img.Hebo{
+display:inline-block;
+width:200px;
+height:200px;
+float: center;}
+
+section.sel2 {padding-top: 100px;}
+
+
+.text2 {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 0 94px;
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/**************************************************************************
+ *************************************анимация******************************/
+
+
+section div img.fish:hover{
+    opacity: 0.5; /*изминение прозрачности*/
+    width: 240px;
+    height: 240px;}
+
+
+
+.fish:hover {
+    transition: all 5s ease;/* 1) к какому элементу(ко всем all) 
+    2)длительность выполнения перехода 3) тип анимации ease столкбик кое как двигается
+    4) задержка ее нет*/
+    transform: rotateZ(180deg);/*deg градусы*/
+  }
+
+
+.gorilla:hover {
+  border-radius: 25px; /*радиус можно задавать в %*/
+   transition: all 1s ease-out;/*easy формула скорости анимации*/
+}
+
+
+
+
+.Hebo:hover {
+  animation: swing 1.5s ease;/* имя анимации как в JS с фукциями*/
+  animation-iteration-count: 1;
+   transition: all 0.5s ease;
+}
+
+
+@keyframes swing {
+  1% {
+    transform: translateX(50px);/*вправо по оси Х где проценты э
+    то скорость чем больше процетов тем движение быстрее*/
+  }
+  3% {
+    transform: translateX(-500px);/*влево по оси Х*/
+  }
+  5% {
+    transform: translateX(3px);/*ввверх по оси Х*/
+  }
+  65% {
+    transform: translateX(-3px);/*вниз по оси Х*/
+  }
+  80% {
+    transform: translateX(2px); /*ввверх по оси Х*/
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.text2 {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 0 94px;
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+}
